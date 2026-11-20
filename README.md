@@ -1,37 +1,95 @@
+Week 1 – Networking Fundamentals & Network Simulation
 
-# Week 1 - Simple LAN Topology Lab
+Internship Information
 
-**Student:** Aftab Alam
-**Internship:** IT-SIMPLERA Solutions - Network Administration
-**Date:** Nov 20, 2026
+- Student Name: Aftab Alam
+- Internship Company: IT-SIMPLERA Solutions
+- Week: 01
+- Project: Basic LAN Configuration and Network Simulation
 
-## 1. Objective
-To design a basic LAN topology with 2 PCs and a Switch, configure static IPv4, and verify end-to-end connectivity using ICMP ping in both Cisco Packet Tracer and GNS3 (PuTTY).
+1. Introduction
 
-## 2. Networking Concepts Learned
-- **LAN & Switch:** How devices form a single broadcast domain via Layer 2 switch
-- **IPv4:** Use of Class C private IP 192.168.1.0/24 and mask 255.255.255.0
-- **ICMP:** Ping test for reachability check
+This project is part of my Week 1 Network Administration Internship. The main objective was to understand basic networking concepts and gain practical experience using network simulation tools.
 
-## 3. IP Scheme
-| Device | IP Address | Subnet |
-| :--- | :--- | :--- |
-| PC1 | 192.168.1.1 | 255.255.255.0 |
-| PC2 | 192.168.1.2 | 255.255.255.0 |
-| Switch1 | Layer 2 | N/A |
+During this task, I worked with Cisco Packet Tracer and GNS3 to create and test a simple Local Area Network (LAN).
 
-## 4. Packet Tracer Implementation
-Connected PC1 & PC2 to Switch1 via Copper Straight-Through cable. Configured IPs via IP Configuration tab. Result: Ping `192.168.1.2` from PC1 -> 4 Replies, 0% Loss - SUCCESS.
+2. Objectives
 
-## 5. GNS3 & PuTTY Implementation
-Created same topology with 2 VPCS nodes in GNS3. Used PuTTY commands:
-- `ip 192.168.1.1/24` on PC1
-- `ip 192.168.1.2/24` on PC2
-Result: Ping from PC1 -> 5 Replies, ttl=64 - SUCCESS.
+- Understand basic networking concepts.
+- Learn about LAN topology.
+- Configure IP addresses on PCs.
+- Understand the role of network switches.
+- Perform connectivity testing using the ping command.
+- Explore Cisco Packet Tracer and GNS3 interfaces.
+- Understand the basic purpose of PuTTY.
 
-## 6. Challenges
-- GNS3 nodes needed to be started manually (red to green).
-- VPCS uses CLI `ip` command, not GUI like Packet Tracer.
+3. Cisco Packet Tracer – LAN Configuration
 
-## 7. Conclusion
-Week 01 completed successfully. Learned fundamentals and hands-on with both simulators. Ready for routing tasks.
+I created a simple LAN topology using:
+
+- One Cisco 2960 Switch.
+- Two End Devices (PC0 and PC1).
+- Copper Straight-Through cables.
+
+Both PCs were connected to the switch to establish communication within the same local network.
+
+IP Address Configuration
+
+Device| IP Address| Subnet Mask
+PC0| 192.168.1.10| 255.255.255.0
+PC1| 192.168.1.20| 255.255.255.0
+
+Both devices were configured in the same network.
+
+4. Connectivity Testing
+
+After configuring the IP addresses, I performed a connectivity test using the ping command.
+
+Command used:
+
+"ping 192.168.1.20"
+
+The ping test was successful, confirming communication between the two PCs.
+
+5. GNS3 – Network Simulation
+
+I also explored GNS3 to understand network simulation.
+
+The practical work included:
+
+- Creating a new network project.
+- Adding two VPCS devices.
+- Adding an Ethernet switch.
+- Connecting both PCs to the switch.
+- Assigning IP addresses.
+- Testing connectivity using ping.
+
+6. PuTTY – Introduction
+
+PuTTY is a terminal application used for connecting to network devices through protocols such as SSH and Telnet, and through serial connections.
+
+During this task, I explored its interface and basic connection options.
+
+7. Tools Used
+
+- Cisco Packet Tracer
+- GNS3
+- PuTTY
+- GitHub
+
+8. Learning Outcomes
+
+Through this practical task, I learned:
+
+- How to create a basic LAN topology.
+- How to configure IPv4 addresses.
+- How to connect PCs using a network switch.
+- How to verify network connectivity using ping.
+- How to use network simulation tools.
+- The basic purpose of PuTTY.
+
+9. Conclusion
+
+Successfully completed the basic LAN configuration and network simulation activities. This task improved my understanding of networking fundamentals and provided practical experience with Cisco Packet Tracer and GNS3.
+
+Prepared by: Aftab Alam
